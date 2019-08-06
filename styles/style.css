@@ -1,0 +1,309 @@
+
+/* COLOURS
+Water blue #1d81cc
+Marine #042259
+Pale rose #f5c8cf
+Pale grey #f0f5ff
+Light pink #fcdde2
+Darker grey #1f2022
+*/
+
+/*
+FONTS 
+font-family: 'Emblema One', cursive;
+font-family: 'Barlow', sans-serif;
+*/
+
+
+/* SETUP */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* GENERAL STYLES */
+
+html {
+
+    font-size: 125%;
+    background: #f0f5ff; /* This is fore the .grid section */
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.wrapper {
+    max-width: 1400px; /*IS THIS TOO BIG?*/
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Emblema One', cursive;
+    color: #1d81cc;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    margin: 0;
+
+}
+
+p {
+    Line height: 29px;
+    Letter-spacing: 0.2px;
+    font-family: 'Barlow', sans-serif;
+    color: #1f2022;
+}
+
+.readMore {
+    font-family: 'Emblema One', cursive;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    Line-height: 29px;
+}
+
+
+/* HEADER */
+
+header {
+    background: #f5c8cf url('../images/header-group-appliances.png') bottom right no-repeat;
+    background-size: 47%;
+    height: 90vh;
+    
+}
+
+.mainMenu {  
+    width: 100%;
+}
+
+.mainMenu ul {
+    float: right;
+}
+
+.mainMenu li {
+    float: left;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.mainMenu a {
+    color: #042259;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    margin-left: 20px;
+}
+
+.headerCopy {
+    width: 50%;
+    float: left;
+}
+
+h1 {
+    font-family: 'Emblema One', cursive;
+    color: #1d81cc;
+    font-size: 5.23rem;
+    text-transform: uppercase;
+    line-height: 87.3px;
+    margin-top: 25%;
+}
+
+header p {
+    font-family: 'Barlow', sans-serif;
+    color: #1d81cc;
+    font-size: 2.1rem;
+    text-transform: lowercase;
+}
+
+.iconMenu {
+    float: right;
+    position: relative;
+    left: 5%;
+    top: 40px;
+}
+
+.iconMenu a {
+    line-height: 29px;
+    color: #1d81cc;
+}
+
+/* MAIN */
+
+/* SECTION 1 */
+
+.newsBest {
+    background: #fcdde2;
+}
+
+.news {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gallery {
+    width: 30%;
+    float: left;
+    margin-top: 50px;
+}
+
+.one {
+    margin-right: 5%;
+}
+
+.two {
+    margin-right: 5%;
+}
+
+.square {
+    width: 25%;
+    margin-top: 65px;
+    float: left;
+    padding-bottom: 100px;
+}
+
+.bestAppliances {
+    float: left;
+    width: calc(75% - 30px);
+    margin-left: 30px;
+    padding-bottom: 100px;
+}
+
+.bestAppliances h2 {
+    text-align: left;
+    margin-top: 65px;
+    position: relative;
+    top: -10px;
+}
+
+.bestAppliances .readMore {
+    margin-top: 25px;
+    background: #042259;
+    color: #f0f5ff;
+}
+
+/* SECTION 2 */
+
+.grid {
+    background: #f0f5ff;
+}
+
+.smoothies {
+    width: calc(50% - 40px);
+    float: left;
+    margin-right: 40px;
+}
+
+.smoothies h2,
+.newHome h2 {
+    padding-top: 15%;
+}
+
+.smoothies .readMore,
+.newHome .readMore {
+    background: #f5c8cf;
+}
+
+.smoothies p,
+.newHome p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.smoothies a,
+.newHome a {
+    color: #042259;
+}
+
+
+.smooth {
+    width: 50%;
+    float: left;  
+}
+
+.appliances {
+    width: 50%;
+    float: left;
+}
+
+.newHome {
+    width: calc(50% - 60px);
+    float: right;
+    margin-left: 60px;
+}
+
+/* SECTION 3 */
+
+.iconBottom {
+    background-color: #fcdde2;
+
+}
+
+.iconBox {
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+    clear: both;
+    padding: 90px 0;
+}
+
+.iconBox a {
+    color: #042259;
+    font-size: 2.5rem;
+}
+
+.iconBox h3 {
+    font-family: 'Emblema One', cursive;
+    text-transform: uppercase;
+    color: #1d81cc;
+    letter-spacing: 1.2px;
+    font-size: 1.56rem;
+}
+
+/* FOOTER */
+
+h4 {
+    font-family: 'Emblema One', cursive;
+    font-size: 1.25rem;
+    color: #1d81cc;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.updated {
+    width: 50%;
+    float: left;
+}
+
+.contact {
+    width: 30%;
+    float: left;
+}
+
+.menu {
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+.copyright {
+    background-color: #042259;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.copyright p {
+    color: white;
+    margin: 0;
+}
