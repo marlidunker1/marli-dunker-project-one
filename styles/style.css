@@ -40,7 +40,7 @@ html {
 }
 
 .wrapper {
-    max-width: 1400px; /*IS THIS TOO BIG?*/
+    max-width: 1280px; /*IS THIS TOO BIG? ITS DPI LAPTOP*/
     width: 85%;
     margin: 0 auto;
 }
@@ -83,6 +83,14 @@ header {
     
 }
 
+i.fa-bars {
+    color: #042259;
+    padding-top: 15px;
+    margin-left: 95%;
+    font-size: 2rem;
+    display: none;
+}
+
 .mainMenu {  
     width: 100%;
 }
@@ -117,13 +125,15 @@ h1 {
     text-transform: uppercase;
     line-height: 87.3px;
     margin-top: 25%;
+    margin-bottom: 0;
 }
 
 header p {
     font-family: 'Barlow', sans-serif;
-    color: #1d81cc;
+    color: #042259;
     font-size: 2.1rem;
     text-transform: lowercase;
+    margin: 0;
 }
 
 .iconMenu {
@@ -200,13 +210,13 @@ header p {
 
 .smoothies {
     width: calc(50% - 40px);
-    float: left;
+    float: right;
     margin-right: 40px;
 }
 
 .smoothies h2,
 .newHome h2 {
-    padding-top: 15%;
+    padding-top: 30%;
 }
 
 .smoothies .readMore,
@@ -228,18 +238,20 @@ header p {
 
 .smooth {
     width: 50%;
-    float: left;  
+    float: right;  
 }
 
 .appliances {
     width: 50%;
     float: left;
+    clear: both;
 }
 
 .newHome {
     width: calc(50% - 60px);
-    float: right;
+    float: left;
     margin-left: 60px;
+    padding-bottom: 10px;
 }
 
 /* SECTION 3 */
@@ -277,23 +289,74 @@ h4 {
     font-size: 1.25rem;
     color: #1d81cc;
     text-transform: uppercase;
+    padding: 0;
     margin: 0;
 }
 
 .updated {
     width: 50%;
+}
+
+form,
+.updated p {
+    margin: 0;
+    padding: 0;
+}
+
+.updated input {
+    border: 1px solid #f5c8cf;
+}
+
+.updated button {
+    background: #f5c8cf;
+    border: none;
+    font-family: 'Emblema One', cursive;
+    color:#042259;
+    text-transform: uppercase;
+}
+
+.updated input {
+    padding: 10px 30px;
+}
+
+.updated button {
+    padding: 10px 20px;
+}
+.updated input,
+.updated button {
+    margin-top: 10px;
     float: left;
 }
 
+
 .contact {
     width: 30%;
-    float: left;
+}
+
+.updated h4,
+.contact h4 {
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin: 0;
+    line-height: 29px;
 }
 
 .menu {
     width: 20%;
-    float: left;
     text-align: right;
+}
+
+.menu a {
+    color: #1d81cc;
+}
+
+.updated,
+.contact,
+.menu {
+    float: left;
+    margin: 100px 0;
 }
 
 .copyright {
@@ -304,6 +367,309 @@ h4 {
 }
 
 .copyright p {
-    color: white;
+    color: #f0f5ff;
     margin: 0;
+    padding: 10px 0;
+}
+
+@media (max-width: 1200px) {
+
+    /* SECTION 2 SIZE ADJUST*/
+
+    .smoothies h2,
+    .newHome h2 {
+    padding-top: 15%;
+    }
+
+    /* FOOTER SIZE ADJUST*/
+
+    .updated input {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* GENERAL TABLET*/
+
+    html {
+        font-size: 110%;
+    }
+
+    /* SECTION 1 TABLET*/
+    .square {
+        width: 35%;
+    }
+    
+    .bestAppliances {
+        width: calc(65% - 30px);
+    }
+
+    /* SECTION 2 TABLET*/
+
+    .smoothies h2,
+    .newHome h2 {
+    padding-top: 5%;
+    }
+
+}
+
+@media (max-width: 840px) {
+
+    /* GENERAL MOBILE*/
+
+    html {
+        font-size: 100%;
+    }
+    
+    
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* HEADER MOBILE */
+
+    header {
+        background-size: 75%;
+        height: 90vh;
+    }
+
+    i.fa-bars {
+        display: block;
+    }
+
+    nav.mainMenu,
+    .iconMenu {
+        display: none;
+    }
+
+    .headerCopy {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+        line-height: 60px;;
+        margin-top: 25%;
+        margin-bottom: 0;
+    }
+
+    .headerCopy p {
+        font-size: 1.3rem;
+    }
+    /* SECTION 1 MOBILE*/
+
+    .news {
+        padding-top: 30px;
+    }
+
+    .gallery {
+        width: 48%;
+        padding-top: 30px;
+    }
+
+    .one {
+        margin: 0 4% 0 0;
+    }
+
+    .two {
+        margin: 0;
+    }
+
+    .three {
+        display: none;
+    }
+
+    .square {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .bestAppliances {
+        width: 100%;
+        margin-top: 65px;
+        position: static;
+        float: none;
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+    
+    .bestAppliances h2 {
+        text-align: center;
+        position: static;
+    }
+
+    .bestAppliances p {
+        padding-bottom: 20px;
+    }
+    
+    .readMore {
+        background: #042259;
+        color: #f0f5ff;
+        padding: 5px 5px;
+        width: 140px;
+        display: block;
+        margin: 10px auto 30px auto;
+    }
+
+    .bestAppliances .readMore {
+        margin-top: 10px;
+        text-align: center;
+    }
+    /* SECTION 2 MOBILE */
+
+    html {
+        background: #fcdde2;
+    }
+
+    .grid {
+        background: #fcdde2;
+    }
+    
+    .smoothies {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        display: inline-block;
+    }
+    
+    .smoothies h2,
+    .newHome h2 {
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    .smoothies .readMore,
+    .newHome .readMore {
+        text-align: center;
+        background: #042259;
+        color: #f0f5ff;
+    }
+    
+    
+    .smooth {
+        width: 100%;
+        float: none;  
+    }
+    
+    .appliances {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+    
+    .newHome {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        clear: both;
+    }
+
+    /* SECTION 3 MOBILE */
+
+    /* SECTION 3 */
+
+    .iconBottom {
+        background-color: #f5c8cf;
+        padding: 35px 0;
+
+    }
+
+    .iconBox {
+        width: 100%;
+        clear: both;
+        padding: 0;
+        margin: 0;
+    }
+
+    .iconBox h3 {
+        margin-top: 10px;
+    }
+
+    /* SECTION 4 MOBILE */
+
+    /* FOOTER */
+
+    footer {
+        background: #f0f5ff;
+    }
+    h4 {
+        text-align: center;
+    }
+
+    .updated {
+        width: 100%;
+        padding: 30px 0;
+        margin 0;
+        text-align: center;
+        float: none;
+    }
+
+    .updated p {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .updated input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .updated button {
+        width: 40%;
+        margin: 10px auto;
+        display: block;
+        width: 140px;
+    }
+
+    .updated input,
+    .updated button {
+        margin-top: 10px;
+        float: none;
+    }
+
+
+    .contact {
+        width: 65%;
+        margin-bottom: 60px;
+    }
+
+    .updated h4,
+    .contact h4 {
+        margin-bottom: 0;
+    }
+
+    .contact h4 {
+        text-align: left;
+    }
+
+    .contact p {
+        margin: 0;
+        line-height: 20px;
+        font-size: 0.9rem;
+    }
+
+    .menu {
+        width: 35%;
+    }
+
+    .menu h4 {
+        text-align: right;
+    }
+
+    .updated {
+        margin: 0;
+    }
+
+    .contact,
+    .menu {
+        margin: 0 0 50px 0;
+    }
 }
